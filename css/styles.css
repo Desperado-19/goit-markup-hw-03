@@ -73,10 +73,16 @@ body {
     padding-bottom: 94px;
 }
 
+img {
+    display: block;
+}
+
 /* --------------------Header-------------------- */
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -156,7 +162,10 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-title-color);
+    width: 696px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -184,6 +193,11 @@ body {
     background: #188CE8;;
 }
 
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -199,6 +213,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    width: 270px;
 }
 
 .section-title {
@@ -210,12 +225,22 @@ body {
     margin-bottom: 50px;
 }
 
+.process-list {
+    display: flex;
+    gap: 30px;
+}
+
+.process-item {
+    width: calc((100% - 60px) / 3);
+}
+
 .team {
     background: var(--section-team-bg-color);
 }
 
-.team-wrap {
+.team-list {
     display: flex;
+    gap: 30px;
 }
 
 .team-item {
@@ -247,6 +272,13 @@ body {
 }
 
 /* --------------------Main_Portfolio-------------------- */
+.portfolio-btn-list {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 34px;
+    justify-content: center;
+}
+
 .portfolio-btn {
     font-family: 'Roboto';
     font-weight: 500;
@@ -258,6 +290,9 @@ body {
     background: var(--primary-btn-bg-color);
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
@@ -266,13 +301,28 @@ body {
     background: var(--secondary-btn-bg-color);
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
 .portfolio-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .portfolio-text {
@@ -281,6 +331,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* --------------------Footer-------------------- */
